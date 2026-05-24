@@ -976,35 +976,17 @@ If the issue still persists, reply:
       }
 
       // ==============================
-// GENERAL CONVERSATION (LLM)
 // ==============================
+      // FALLBACK
+      // ==============================
 
-const normalReply =
-  await askLLM(
-    `
-You are DeskMate AI.
+      return res.json({
+        reply:
+          "I cannot help with that but I can help with VPN, password reset, software access, and ticket management.",
 
-You are a friendly IT helpdesk assistant.
+        trace,
+      });
 
-Rules:
-- Reply naturally
-- Keep answers short
-- Be conversational
-- Answer general questions normally
-- If question is unrelated to IT support, still answer politely
-`,
-    message
-  );
-
-trace.push({
-  step: "general_conversation",
-  reply: normalReply,
-});
-
-return res.json({
-  reply: normalReply,
-  trace,
-});
     } catch (err) {
 
       console.log(err);
