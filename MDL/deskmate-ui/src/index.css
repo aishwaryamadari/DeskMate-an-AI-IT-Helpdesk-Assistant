@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+}
+
+.app-shell {
+  display: flex;
+  gap: 24px;
+  padding: 30px;
+}
+
+.chat-card {
+  flex: 1;
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.subtitle {
+  color: gray;
+}
+
+.employee-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.employee-row input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.chat-window {
+  height: 500px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 14px;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.bubble.user {
+  background: #2563eb;
+  color: white;
+  margin-left: auto;
+}
+
+.bubble.assistant {
+  background: #e5e7eb;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.input-row textarea {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.input-row button {
+  width: 120px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.trace-box {
+  margin-top: 20px;
+}
+
+.ticket-sidebar {
+  width: 350px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.sidebar-actions button {
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #0f172a;
+  color: white;
+}
+
+.sidebar-actions .danger {
+  background: #ef4444;
+}
+
+.ticket-card {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.empty-text {
+  color: gray;
+  margin-top: 20px;
+}
